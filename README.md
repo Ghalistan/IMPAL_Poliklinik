@@ -6,4 +6,4 @@
 - Bintang Peryoga
 - Erica Nursanti
 - Fatahillah Ardhi
-- Gagah Ghalistan
+- Gagah Ghalistan (Refactoring)
