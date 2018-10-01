@@ -4,6 +4,6 @@
 
 ## Contributors
 - Bintang Peryoga
-- Erica Nursanti
+- Erica Nursanti (Designer)
 - Fatahillah Ardhi
 - Gagah Ghalistan (Refactoring)
