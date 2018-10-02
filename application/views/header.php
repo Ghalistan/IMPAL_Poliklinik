@@ -31,7 +31,8 @@
 							</div>
 							<div class="col-sm-auto" style="padding-left: 0px;">
 								<div>
-									<button type="button" class="btn btn-primary" id="login">Login</button>
+									<!-- <button type="button" class="btn btn-primary" id="login">Login</button> -->
+									<input class="btn btn-primary" id="login" type="submit" name="submit">
 								</div>
 							</div>
 						</div>
