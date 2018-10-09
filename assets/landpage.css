@@ -8,15 +8,40 @@ div.login-form {
 	width: 250px;
 }
 
-a:link.footertext {
+a.footertext {
 	color: white;
 
 	font-family: Verdana;
 	font-size: 15px;
 }
 
-td.socialicon {
+.socialicon {
 	padding: 0px 5px 0px 5px;
+}
+
+h1#bigtext {
+	color: #2D3B61;
+
+	font-weight: 600;
+	font-size: 60px;
+}
+
+button#bigdaftar {
+	background-color: #2E3A62;
+	border: none;
+	padding: 15px 35px 15px 35px;
+
+	font-family: Verdana;
+	font-size: 25px;
+}
+
+#smalldaftar {
+	background-color: #2E3A62;
+	border: none;
+	padding: 10px 15px 10px 15px;
+
+	font-family: Verdana;
+	font-size: 15px;
 }
 
 #About {

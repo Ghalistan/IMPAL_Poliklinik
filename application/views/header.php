@@ -3,8 +3,8 @@
 <head>
 	<title>Poliklinik Sukabirus</title>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url("Bootstrap/css/bootstrap.min.css") ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url("assets/landingpage.css") ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url("Bootstrap/css/bootstrap.min.css"); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url("assets/landpage.css"); ?>">
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
@@ -31,8 +31,7 @@
 							</div>
 							<div class="col-sm-auto" style="padding-left: 0px;">
 								<div>
-									<!-- <button type="button" class="btn btn-primary" id="login">Login</button> -->
-									<input class="btn btn-primary" id="login" type="submit" name="submit">
+									<input class="btn btn-primary" id="login" type="submit" name="submit" value="Login">
 								</div>
 							</div>
 						</div>
