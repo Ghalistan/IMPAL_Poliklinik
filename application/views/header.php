@@ -17,16 +17,16 @@
 				<a id="title" href="#">Poliklinik</a>
 			</div>
 			<div style="padding-top: 10px;">
-				<form>
+				<form action="<?php echo site_url('Login/masuk'); ?>" method="POST">
 					<div class="container form-group">
 						<div class="row">
 							<div class="col-sm">
 								<div class="login-form">
-									<input class="form-control form-control-sm" type="text" name="" placeholder="Username">
+									<input class="form-control form-control-sm" type="text" name="username" placeholder="Username">
 								</div>
 								<div style="padding-top: 5px;"></div>
 								<div class="login-form">
-									<input class="form-control form-control-sm" type="password" name="" placeholder="Password">
+									<input class="form-control form-control-sm" type="password" name="password" placeholder="Password">
 								</div>
 							</div>
 							<div class="col-sm-auto" style="padding-left: 0px;">
