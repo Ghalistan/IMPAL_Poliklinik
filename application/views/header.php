@@ -14,7 +14,7 @@
 	<div class="container-fluid header">
 		<nav class="navbar justify-content-between">
 			<div>
-				<a id="title" href="#">Poliklinik</a>
+				<a id="title" href="<?php echo site_url('Landing'); ?>">Poliklinik</a>
 			</div>
 			<div style="padding-top: 10px;">
 				<form action="<?php echo site_url('Login/masuk'); ?>" method="POST">

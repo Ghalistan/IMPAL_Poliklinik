@@ -21,5 +21,15 @@
 				return FALSE;
 			}
 		}
+
+		function daftarPoli() {
+			$data['Pasien'] = $_SESSION['login'];
+			$data['Poliklinik'] = $this->input->post('pendaftaran');
+			$data['Dokter'] = $this->input->post('dokter');
+			$data['Pesan'] = $this->input->post('pesan');
+			$data['detailKeluhan'] = $this->input->post('detailKeluhan');
+
+			$this->db->insert('daftarpoli', $data);
+		}
 	}
 ?>
