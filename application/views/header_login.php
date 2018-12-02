@@ -22,6 +22,7 @@
 				<a class="menu mr-5" href="<?php echo site_url('Pendaftaran'); ?>">Pendaftaran</a>
 				<a class="dropdown-toggle menu mr-5" data-toggle="dropdown" href="#" role="button">Profil</a>
 				<div class="dropdown-menu dropdown-menu-right">
+					<a class="dropdown-item" href="<?php echo site_url('Userpage/profile'); ?>">Edit Profile</a>
 					<a class="dropdown-item" href="<?php echo site_url('Login/logout'); ?>">Logout</a>
 				</div>
 			</div>

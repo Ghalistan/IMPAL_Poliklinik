@@ -12,6 +12,14 @@
 </head>
 <body>
 	<div class="container-fluid header">
+		<?php if(isset($_SESSION['fail'])) {
+			echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+		<strong>Password / Username Salah! </strong>Silahkan masukkan kembali.
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		</div>';
+		} ?>
 		<nav class="navbar justify-content-between">
 			<div>
 				<a id="title" href="<?php echo site_url('Landing'); ?>">Poliklinik</a>

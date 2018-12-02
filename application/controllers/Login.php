@@ -11,7 +11,10 @@ class Login extends CI_Controller {
 			$this->session->set_userdata('login', $this->input->post('username'));
 			redirect("Landing");
 		} else {
-			$this->load->view('footer', $data);
+			$this->session->set_userdata('fail', 'fail');
+			$this->load->view('header'); 
+			$this->load->view('landingpage');
+			$this->load->view('footer');
 		}
 	}
 
@@ -19,6 +22,17 @@ class Login extends CI_Controller {
 		$this->session->unset_userdata('login');
 		$this->session->sess_destroy();
 		redirect("Landing");
+	}
+
+	public function edit_data() {
+		if($this->input->post('password') == $this->input->post('password2')) {
+			$this->User->updateData();
+			$this->session->set_flashdata('edit_success', 'success');
+			redirect("Userpage/profile");
+		} else {
+			$this->session->set_flashdata('failedit', 'fail');
+			redirect("Userpage/profile");
+		}
 	}
 }
 ?>
