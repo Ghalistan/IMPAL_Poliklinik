@@ -32,6 +32,10 @@
 			$this->db->insert('daftarpoli', $data);
 		}
 
+		function getPoli() {
+			return $this->db->get('data_dokter')->result_array();
+		}
+
 		function getData() {
 			$this->db->where('username', $_SESSION['login']);
 			$query = $this->db->get('user_data');

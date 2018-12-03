@@ -28,13 +28,13 @@
 			<div class="form-group row">
 				<label for="nama" class="col-sm-2 col-form-label" style="color: #2E3A62; font-size: 20px; font-weight: bold;">Nama Depan</label>
 				<div class="col-sm-10">
-					<input class="form-control" type="text" name="nama" id="nama" value="<?php echo $data['nama_depan']; ?>">
+					<input class="form-control" type="text" name="nama" id="nama" value="<?php echo $data['nama_depan']; ?>" required>
 				</div>
 			</div>
 			<div class="form-group row">
 				<label for="namab" class="col-sm-2 col-form-label" style="color: #2E3A62; font-size: 20px; font-weight: bold;">Nama Belakang</label>
 				<div class="col-sm-10">
-					<input class="form-control" type="text" name="namab" id="namab" value="<?php echo $data['nama_belakang']; ?>">
+					<input class="form-control" type="text" name="namab" id="namab" value="<?php echo $data['nama_belakang']; ?>" required>
 				</div>
 			</div>
 			<div class="form-group row">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2018 at 04:11 PM
+-- Generation Time: Dec 03, 2018 at 02:14 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -42,7 +42,36 @@ CREATE TABLE `daftarpoli` (
 --
 
 INSERT INTO `daftarpoli` (`id`, `Pasien`, `Poliklinik`, `Dokter`, `Pesan`, `detailKeluhan`) VALUES
-(1, 'Ghalistan', 'asd', 'asd', 'asd', '');
+(1, 'Ghalistan', 'asd', 'asd', 'asd', ''),
+(2, 'Ghalistan', '', '', '', ''),
+(3, 'Ghalistan', '', '', '', ''),
+(4, 'Ghalistan', 'asd', 'asd', 'asd', ''),
+(5, 'Ghalistan', 'asd', 'asd', 'asd', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `data_dokter`
+--
+
+CREATE TABLE `data_dokter` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `Nama` varchar(50) NOT NULL,
+  `Poliklinik` varchar(50) NOT NULL,
+  `Jam_Buka` varchar(50) NOT NULL,
+  `Jam_Tutup` varchar(50) NOT NULL,
+  `Kontak` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `data_dokter`
+--
+
+INSERT INTO `data_dokter` (`id`, `Nama`, `Poliklinik`, `Jam_Buka`, `Jam_Tutup`, `Kontak`) VALUES
+(1, 'Dahlan Darmaji', 'Poli Anak', '08:00', '21:00', '08134678598'),
+(2, 'Asep Kasupala', 'Poli Gigi', '08:00', '18:00', '0822567908'),
+(5, 'Nanda Nirmala', 'Dokter Umum', '10:00', '18:00', '0812345678'),
+(6, 'Wisma An-Nafi', 'Poli mata', '09:00', '21:00', '08134678578');
 
 -- --------------------------------------------------------
 
@@ -96,6 +125,12 @@ ALTER TABLE `daftarpoli`
   ADD KEY `Pasien` (`Pasien`);
 
 --
+-- Indexes for table `data_dokter`
+--
+ALTER TABLE `data_dokter`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `login`
 --
 ALTER TABLE `login`
@@ -115,7 +150,13 @@ ALTER TABLE `user_data`
 -- AUTO_INCREMENT for table `daftarpoli`
 --
 ALTER TABLE `daftarpoli`
-  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `data_dokter`
+--
+ALTER TABLE `data_dokter`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables

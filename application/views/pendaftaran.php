@@ -56,30 +56,27 @@
 					<thead>
 						<tr>
 							<th scope="col">#</th>
-							<th scope="col">First</th>
-							<th scope="col">Last</th>
-							<th scope="col">Handle</th>
+							<th scope="col">Nama</th>
+							<th scope="col">Poliklinik</th>
+							<th scope="col">Jam Buka</th>
+							<th scope="col">Jam Tutup</th>
+							<th scope="col">Kontak</th>
 						</tr>
 					</thead>
 					<tbody>
+					<?php
+					$count = 1;
+					foreach($data as $row) {
+					?>
 						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
+							<th scope="row"><?php echo $count; ?></th>
+							<td><?php echo $row['Nama']; ?></td>
+							<td><?php echo $row['Poliklinik']; ?></td>
+							<td><?php echo $row['Jam_Buka']; ?></td>
+							<td><?php echo $row['Jam_Tutup']; ?></td>
+							<td><?php echo $row['Kontak']; ?></td>
 						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Larry</td>
-							<td>the Bird</td>
-							<td>@twitter</td>
-						</tr>
+					<?php $count = $count + 1; } ?>
 					</tbody>
 				</table>
 			</div>
