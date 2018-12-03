@@ -24,19 +24,19 @@
 					<div class="form-group row">
 						<label for="pendaftaran" class="col-sm-2 col-form-label">Pendaftaran Poliklinik</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="pendaftaran" name="pendaftaran" placeholder="Masukkan Poliklinik Tujuan">
+							<input type="text" class="form-control" id="pendaftaran" name="pendaftaran" placeholder="Masukkan Poliklinik Tujuan" required>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="Dokter" class="col-sm-2 col-form-label">Dokter Tujuan</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="Dokter" name="dokter" placeholder="Masukkan Dokter Tujuan">
+							<input type="text" class="form-control" id="Dokter" name="dokter" placeholder="Masukkan Dokter Tujuan" required>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="pesan" class="col-sm-2 col-form-label">Pesan</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="pesan" name="pesan" placeholder="Masukkan Pesan">
+							<input type="text" class="form-control" id="pesan" name="pesan" placeholder="Masukkan Pesan" required>
 						</div>
 					</div>
 					<div class="form-group">
